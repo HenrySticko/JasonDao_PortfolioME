@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Racing Monocoque | Jason Dao</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .engineering-grid {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed top-0 w-full bg-slate-50/90 backdrop-blur-md border-b border-slate-200 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2 text-sm font-bold uppercase tracking-widest hover:text-blue-600 transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                <span>Back to Portfolio</span>
+            </a>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hidden md:block">Project Case Study: 001</span>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 bg-white border-b border-slate-200">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl">
+                <h2 class="mono text-blue-600 text-sm font-bold mb-4 uppercase tracking-[0.4em]">Structural Design & Analysis</h2>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-8">Electric Racing Monocoque Chassis</h1>
+                <p class="text-xl text-slate-600 leading-relaxed mb-8">
+                    An exploration into lightweight composite structures, optimizing for torsional stiffness and driver safety in a high-performance electric racing environment.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-3 py-1 bg-slate-100 border border-slate-200 text-xs font-bold mono">SOLIDWORKS</span>
+                    <span class="px-3 py-1 bg-slate-100 border border-slate-200 text-xs font-bold mono">ANSYS FEA</span>
+                    <span class="px-3 py-1 bg-slate-100 border border-slate-200 text-xs font-bold mono">COMPOSITES</span>
+                    <span class="px-3 py-1 bg-slate-100 border border-slate-200 text-xs font-bold mono">DFM</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-16">
+                
+                <div class="lg:col-span-2 space-y-16">
+                    <section>
+                        <div class="aspect-video bg-slate-200 rounded-sm overflow-hidden border border-slate-200 shadow-xl">
+                            <img src="https://cdn.discordapp.com/attachments/705966395346911312/1455733393324118250/Screenshot_2025-12-30_172343.png?ex=6955ccdf&is=69547b5f&hm=8a5ce5bbd68c251a0792eaf2730f46ef11160371b9d57b0dfc34607e5a66e36e" 
+                                 alt="Monocoque Chassis CAD Render" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <p class="mt-4 text-xs mono text-slate-400 text-center uppercase tracking-widest">Fig 1.0: Isometric CAD view of final monocoque assembly</p>
+                    </section>
+
+                    <section class="prose prose-slate max-w-none">
+                        <h3 class="text-2xl font-bold mb-6">Engineering Challenge</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            The primary objective was to transition from a traditional steel space-frame to a carbon-fiber reinforced polymer (CFRP) monocoque. The design needed to satisfy strict competition safety regulations while achieving a significant reduction in vehicle mass.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-8 my-10">
+                            <div class="bg-white p-6 border-l-4 border-blue-600 shadow-sm">
+                                <h4 class="font-bold mb-2 uppercase text-xs tracking-widest">Key Metric: Stiffness</h4>
+                                <p class="text-sm text-slate-600">Targeted a torsional stiffness of 2,500 Nm/deg to ensure predictable suspension kinematics.</p>
+                            </div>
+                            <div class="bg-white p-6 border-l-4 border-blue-600 shadow-sm">
+                                <h4 class="font-bold mb-2 uppercase text-xs tracking-widest">Key Metric: Mass</h4>
+                                <p class="text-sm text-slate-600">Reduced primary structure weight by 22% compared to previous season's tubular chassis.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold mb-6">Finite Element Analysis (FEA)</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Using ANSYS, I conducted extensive simulations to validate the laminate schedule. This involved testing for front impact (20g), side-impact protection, and harness attachment point pull-out strength.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="bg-slate-900 text-white p-8 rounded-sm">
+                        <h3 class="mono text-blue-400 text-xs font-bold mb-6 uppercase tracking-widest">Project Specifications</h3>
+                        <ul class="space-y-6">
+                            <li>
+                                <span class="block text-slate-400 text-[10px] uppercase tracking-widest mb-1">Material Selection</span>
+                                <span class="font-bold">T700 Carbon Fiber / Nomex Honeycomb Core</span>
+                            </li>
+                            <li>
+                                <span class="block text-slate-400 text-[10px] uppercase tracking-widest mb-1">Software Stack</span>
+                                <span class="font-bold">SolidWorks, ANSYS, ACP (Composite PrepPost)</span>
+                            </li>
+                            <li>
+                                <span class="block text-slate-400 text-[10px] uppercase tracking-widest mb-1">Safety Standards</span>
+                                <span class="font-bold">FSAE / SES Structural Requirements</span>
+                            </li>
+                            <li>
+                                <span class="block text-slate-400 text-[10px] uppercase tracking-widest mb-1">Timeline</span>
+                                <span class="font-bold">8 Months (Concept to Validation)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="p-8 border border-slate-200 bg-white">
+                        <h3 class="font-bold mb-4 uppercase text-xs tracking-widest">Role: Lead Designer</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Responsible for surface modeling, laminate schedule definition, and coordinating with the manufacturing team for the vacuum bagging process.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 bg-slate-900 text-white border-t border-slate-800">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-[10px] text-slate-500 uppercase tracking-[0.3em]">© 2025 Jason Dao | Case Study 001</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

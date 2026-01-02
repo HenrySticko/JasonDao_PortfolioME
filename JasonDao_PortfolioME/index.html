@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Dao | Mechanical Engineering Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .engineering-grid {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .hover-lift { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed top-0 w-full bg-slate-50/90 backdrop-blur-md border-b border-slate-200 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tight">Jason Dao <span class="text-blue-600 font-light">| Engineering</span></span>
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+                <a href="#projects" class="hover:text-blue-600">Projects</a>
+                <a href="#competencies" class="hover:text-blue-600">Competencies</a>
+                <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#contact" class="bg-slate-900 text-white px-4 py-2 hover:bg-blue-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="engineering-grid min-h-[70vh] flex items-center pt-20 border-b border-slate-200">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl">
+                <h1 class="text-7xl md:text-9xl font-bold tracking-tighter mb-8">Jason Dao</h1>
+                <p class="text-2xl text-slate-600 leading-relaxed max-w-2xl mb-12">
+                    Mechanical Engineering student focused on <span class="text-slate-900 font-semibold">mechanical systems</span>, aerodynamic design, and high-performance structures.
+                </p>
+                <div class="flex items-center space-x-6">
+                    <div class="h-px w-12 bg-slate-400"></div>
+                    <p class="mono text-xs text-slate-500 uppercase tracking-widest">Selected Engineering Portfolio 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-4xl font-bold tracking-tight mb-4 text-blue-600">Selected Works</h2>
+                <div class="h-1 w-20 bg-blue-600 mb-6"></div>
+                <p class="text-slate-500 max-w-xl">In-depth documentation of design, analysis, and fabrication processes.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <a href="project-monocoque.html" class="group block hover-lift">
+                    <div class="relative aspect-video mb-6 overflow-hidden bg-slate-100 rounded-sm border border-slate-200">
+                        <img src="https://cdn.discordapp.com/attachments/705966395346911312/1455733393324118250/Screenshot_2025-12-30_172343.png?ex=6955ccdf&is=69547b5f&hm=8a5ce5bbd68c251a0792eaf2730f46ef11160371b9d57b0dfc34607e5a66e36e" alt="Monocoque Design" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold group-hover:text-blue-600 transition-colors">Electric Racing Monocoque Chassis</h3>
+                            <p class="text-slate-600 mt-2">Lightweight composite structure designed for high-speed racing.</p>
+                        </div>
+                        <i data-lucide="arrow-right" class="text-slate-300 group-hover:text-blue-600"></i>
+                    </div>
+                </a>
+
+                <a href="project-robot.html" class="group block hover-lift">
+                    <div class="relative aspect-video mb-6 overflow-hidden bg-slate-100 rounded-sm border border-slate-200">
+                        <img src="https://cdn.discordapp.com/attachments/705966395346911312/1456082287484604418/image.png?ex=695711ce&is=6955c04e&hm=c1dc85949ec4480afa38e9e4684cd7bd32fe4ee2e8703fcc4cc7f718c794b3cc" alt="Rover Rendering" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold group-hover:text-blue-600 transition-colors">RC Rover</h3>
+                            <p class="text-slate-600 mt-2">A robotic platform designed for speed and stability on a challenging racetrack.</p>
+                        </div>
+                        <i data-lucide="arrow-right" class="text-slate-300 group-hover:text-blue-600"></i>
+                    </div>
+                </a>
+
+                <a href="project-sidewings.html" class="group block hover-lift">
+                    <div class="relative aspect-video mb-6 overflow-hidden bg-slate-100 rounded-sm border border-slate-200">
+                        <img src="https://cdn.discordapp.com/attachments/705966395346911312/1456122449753280553/image.png?ex=69573735&is=6955e5b5&hm=06b19036c74e63672cda98744af20d8f2176cf1272fc3d5a07ef617d1c7d270b" alt="Side Wings CFD" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold group-hover:text-blue-600 transition-colors">Electric Racing Side Wings</h3>
+                            <p class="text-slate-600 mt-2">Carbon fiber wings to add to overall vehicle downforce and cornering power.</p>
+                        </div>
+                        <i data-lucide="arrow-right" class="text-slate-300 group-hover:text-blue-600"></i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="competencies" class="py-24 bg-slate-100 border-y border-slate-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold tracking-tight mb-16">Technical Competencies</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="skills-cad.html" class="flex flex-col md:flex-row bg-white overflow-hidden hover-lift border border-slate-200 group">
+                    <div class="md:w-1/3 h-52 md:h-auto overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="CAD">
+                    </div>
+                    <div class="p-8 md:w-2/3">
+                        <h3 class="text-xl font-bold mb-3 uppercase tracking-tighter">CAD & Design for Manufacturing</h3>
+                        <p class="text-slate-600 text-sm mb-4">Mastery in SolidWorks and Fusion 360, focusing on complex assemblies and CNC toolpathing.</p>
+                        <span class="text-blue-600 font-bold text-xs tracking-widest">Full Skillset →</span>
+                    </div>
+                </a>
+
+                <a href="skills-fea.html" class="flex flex-col md:flex-row bg-white overflow-hidden hover-lift border border-slate-200 group">
+                    <div class="md:w-1/3 h-52 md:h-auto overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Simulation">
+                    </div>
+                    <div class="p-8 md:w-2/3">
+                        <h3 class="text-xl font-bold mb-3 uppercase tracking-tighter">FEA & Structural Simulation</h3>
+                        <p class="text-slate-600 text-sm mb-4">Validating performance under load using ANSYS Finite Element Analysis and CFD tools.</p>
+                        <span class="text-blue-600 font-bold text-xs tracking-widest">Simulation Case Studies →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Engineering Profile</h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        I specialize in the design and optimization of mechanical hardware for aerospace applications. My approach balances computational simulation with hands-on fabrication to ensure reliability in extreme environments.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <span class="bg-blue-600 text-white p-2 rounded-full"><i data-lucide="check" class="w-4 h-4"></i></span>
+                            <p class="font-semibold text-slate-700">Propulsion Systems Lead @ University Rocketry</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="bg-blue-600 text-white p-2 rounded-full"><i data-lucide="check" class="w-4 h-4"></i></span>
+                            <p class="font-semibold text-slate-700">Experienced in CNC Machining & Rapid Prototyping</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-8 border border-slate-200">
+                    <h3 class="font-bold mb-4 uppercase text-xs text-blue-600 tracking-widest">Leadership & Extracurriculars</h3>
+                    <ul class="space-y-6">
+                        <li>
+                            <p class="font-bold">University Rocketry Team</p>
+                            <p class="text-sm text-slate-500">Leading the propulsion division to design hybrid motors for national competitions.</p>
+                        </li>
+                        <li>
+                            <p class="font-bold">Engineers Without Borders</p>
+                            <p class="text-sm text-slate-500">Collaborating on sustainable design solutions for international infrastructure projects.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-24 bg-slate-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-12 md:mb-0">
+                    <h2 class="text-4xl font-bold mb-4 tracking-tighter">Contact & Inquiries</h2>
+                    <p class="text-slate-400">Discussing new opportunities in aerospace and mechanical design.</p>
+                </div>
+                <div>
+                    <a href="mailto:jasonqd.dao@gmail.com" class="text-3xl font-light hover:text-blue-400 transition-colors">jasonqd.dao@gmail.com</a>
+                    <div class="flex justify-center md:justify-end space-x-6 mt-8">
+                        <a href="https://www.linkedin.com/in/jason-q-dao" target="_blank" class="hover:text-blue-400 transition-colors"><i data-lucide="linkedin"></i></a>
+                        <a href="Jason Dao - RESUME (updated 10_15_25).pdf" class="hover:text-blue-400 transition-colors"><i data-lucide="file-text"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-slate-800 text-[10px] text-slate-500 uppercase tracking-widest flex justify-between">
+                <p>© 2025 Jason Dao</p>
+                <p>Calculated Design | Mechanical Engineering</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

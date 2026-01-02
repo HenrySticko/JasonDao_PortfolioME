@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAD & DFM Portfolio | Jason Dao</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .engineering-grid {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed top-0 w-full bg-slate-50/90 backdrop-blur-md border-b border-slate-200 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2 text-sm font-bold uppercase tracking-widest hover:text-blue-600 transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                <span>Back to Portfolio</span>
+            </a>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hidden md:block">Technical Competency: CAD/DFM</span>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 bg-white border-b border-slate-200">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="mono text-blue-600 text-sm font-bold mb-4 uppercase tracking-[0.4em]">Expertise</h2>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-8 text-slate-900">CAD & Design for Manufacturing</h1>
+            <p class="text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                Transforming abstract concepts into high-fidelity parametric models optimized for injection molding, CNC machining, and additive manufacturing.
+            </p>
+        </div>
+    </header>
+
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            
+            <section class="mb-32">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <div>
+                        <h2 class="text-3xl font-bold tracking-tight mb-2">Model Mania Challenges</h2>
+                        <p class="text-slate-500">Speed-modeling and design alteration tests demonstrating parametric robustness.</p>
+                    </div>
+                    <div class="bg-blue-600 text-white px-4 py-2 text-xs font-bold uppercase tracking-widest">SolidWorks Expert Level</div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <div class="aspect-square bg-slate-200 rounded-sm overflow-hidden border border-slate-200 shadow-lg">
+                            <img src="ezgif.com-video-to-gif-converter (3).gif" alt="Model Mania 2019 Practice" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 bg-white border border-slate-200">
+                            <h3 class="font-bold text-xl mb-3 uppercase tracking-tighter">Model Mania 2019 Practice</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Focused on variable drafting, offset extruding, and basic simulation. The challenge involved a Phase 2 design change requiring a draft angle adjustment and use of the hole wizard.
+                            </p>
+                            <div class="flex gap-2">
+                                <span class="px-2 py-1 bg-slate-100 text-[10px] font-bold mono">DRAFT</span>
+                                <span class="px-2 py-1 bg-slate-100 text-[10px] font-bold mono">FILLET</span>
+                                <span class="px-2 py-1 bg-slate-100 text-[10px] font-bold mono">SIMULATION</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="aspect-square bg-slate-200 rounded-sm overflow-hidden border border-slate-200 shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=800" alt="Mechanical Linkage" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 bg-white border border-slate-200">
+                            <h3 class="font-bold text-xl mb-3 uppercase tracking-tighter">Parametric Linkage Assembly</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Engineered a fully constrained assembly with dynamic movement. Utilized global variables to allow for instant scaling of the entire mechanism based on the primary stroke length.
+                            </p>
+                            <div class="flex gap-2">
+                                <span class="px-2 py-1 bg-slate-100 text-[10px] font-bold mono">MATING</span>
+                                <span class="px-2 py-1 bg-slate-100 text-[10px] font-bold mono">EQUATIONS</span>
+                                <span class="px-2 py-1 bg-slate-100 text-[10px] font-bold mono">DYNAMICS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 border-t border-slate-200">
+                <h2 class="text-3xl font-bold tracking-tight mb-12">Design for Manufacturing (DFM)</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="p-8 bg-white border border-slate-200 hover:border-blue-500 transition-colors">
+                        <i data-lucide="wrench" class="text-blue-600 mb-6"></i>
+                        <h3 class="font-bold mb-4 uppercase tracking-tighter text-lg">CNC Optimization</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Designing parts with standard tool diameters in mind, minimizing tool changes, and optimizing internal radii for 3-axis milling operations.</p>
+                    </div>
+                    <div class="p-8 bg-white border border-slate-200 hover:border-blue-500 transition-colors">
+                        <i data-lucide="layers" class="text-blue-600 mb-6"></i>
+                        <h3 class="font-bold mb-4 uppercase tracking-tighter text-lg">Additive Strategy</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Applying topological optimization and generative design to reduce mass without compromising the strength-to-weight ratio for FDM and SLA processes.</p>
+                    </div>
+                    <div class="p-8 bg-white border border-slate-200 hover:border-blue-500 transition-colors">
+                        <i data-lucide="shield-check" class="text-blue-600 mb-6"></i>
+                        <h3 class="font-bold mb-4 uppercase tracking-tighter text-lg">GD&T Standards</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Proficient in applying Geometric Dimensioning and Tolerancing to ensure part interchangeability and clarify design intent for machinists.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 bg-slate-900 text-white rounded-sm p-12">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-12">
+                    <div class="max-w-md">
+                        <h2 class="text-3xl font-bold mb-4">Software Proficiency</h2>
+                        <p class="text-slate-400 text-sm">A multi-platform approach allows for seamless collaboration across different engineering departments and industry standards.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 text-center">
+                        <div>
+                            <p class="text-blue-400 font-bold text-3xl mb-2">4,000+</p>
+                            <p class="text-[10px] uppercase tracking-widest text-slate-500">Hours in SolidWorks</p>
+                        </div>
+                        <div>
+                            <p class="text-blue-400 font-bold text-3xl mb-2">1,500+</p>
+                            <p class="text-[10px] uppercase tracking-widest text-slate-500">Hours in Fusion 360</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="py-12 bg-slate-900 text-white border-t border-slate-800">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-[10px] text-slate-500 uppercase tracking-[0.3em]">© 2025 Jason Dao | Technical Portfolio</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

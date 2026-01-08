@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Wings Project | Jason Dao</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #eff6ff 0%, #ffffff 100%);
+        }
+        .engineering-grid {
+            background-image: radial-gradient(#3b82f6 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="bg-blue-50/30 text-slate-900">
+
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-blue-100 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2 text-sm font-bold uppercase tracking-widest text-blue-600 hover:text-blue-800 transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                <span>Back to Portfolio</span>
+            </a>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-blue-400 hidden md:block">Aerodynamics Subteam: SAE Electric Racing</span>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 hero-gradient border-b border-blue-100 relative overflow-hidden">
+        <div class="absolute inset-0 engineering-grid"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl">
+                <h2 class="mono text-blue-600 text-sm font-bold mb-4 uppercase tracking-[0.4em]">Aerodynamics & Composites</h2>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-8 text-slate-900">Side Wings Design</h1>
+                <p class="text-xl text-slate-600 leading-relaxed mb-8">
+                    Developing high-downforce side wing profiles to optimize cornering speeds and airflow management for the Anteater Electric Racing vehicle, KiloZott. Contributed to ~187 N downforce according to CFD.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-3 py-1 bg-blue-600 text-white text-xs font-bold mono shadow-lg shadow-blue-200">AERODYNAMICS</span>
+                    <span class="px-3 py-1 bg-cyan-500 text-white text-xs font-bold mono shadow-lg shadow-cyan-200">SOLIDWORKS</span>
+                    <span class="px-3 py-1 bg-indigo-500 text-white text-xs font-bold mono shadow-lg shadow-indigo-200">CFRP LAYUP</span>
+                    <span class="px-3 py-1 bg-blue-800 text-white text-xs font-bold mono shadow-lg shadow-blue-900/20">MANUFACTURING</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-16">
+                
+                <div class="lg:col-span-2 space-y-16">
+                    <section>
+                        <div class="aspect-video bg-white rounded-xl overflow-hidden border-4 border-white shadow-2xl">
+                            <img src="Screenshot Side Wings.png" alt="Side Wings CAD Render" class="w-full h-full object-cover">
+                        </div>
+                        <p class="mt-4 text-xs mono text-blue-500 font-bold text-center uppercase tracking-widest">Final Side Wing Assembly [With one endplate removed for clarity]: Multi-element profile for max downforce</p>
+                    </section>
+
+                    <section class="bg-white p-8 rounded-2xl border border-blue-100 shadow-sm">
+                        <h3 class="text-2xl font-bold mb-6 text-slate-800">Design Challenge: Cornering Stability</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            The main goal was to increase tire grip by generating significant downforce without creating excessive drag. This meant a lot of iterations in SolidWorks flow simulations to find the perfect angles of attack for the 3 elements of the wing. The overall concept to design to manufacturing process took about 3 months, or 1 quarter.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-8 mb-10">
+                            <div class="bg-cyan-50 p-6 rounded-xl border-l-8 border-cyan-400 shadow-sm">
+                                <h4 class="font-bold mb-2 uppercase text-xs text-cyan-700 tracking-widest">Airfoil Selection</h4>
+                                <p class="text-sm text-slate-600 leading-relaxed">Utilized E423 airfoil for low-speed airflow typical of SAE competition tracks and to maintain consistency with front and rear wings.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="p-8 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl shadow-xl">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                            <i data-lucide="wrench" class="text-blue-200"></i>
+                            Composites Manufacturing
+                        </h3>
+                        <p class="text-blue-50 leading-relaxed mb-6">
+                            While we did not get to physically manufacture the side wings due to time constraints, I assisted other teams in manufacturing their wings using similar layup techniques, contributing a good couple days of my life to the workshop.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/20">
+                                <h4 class="text-cyan-300 font-bold text-xs uppercase tracking-widest mb-2">Vacuum Bagging</h4>
+                                <p class="text-sm">Executed precision wet layups and vacuum bagging to ensure optimal resin-to-fiber ratios.</p>
+                            </div>
+                            <div class="bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/20">
+                                <h4 class="text-cyan-300 font-bold text-xs uppercase tracking-widest mb-2">Core Integration</h4>
+                                <p class="text-sm">Incorporated 3D-printed cores [as well as honeycomb core for endplates] to increase stiffness while maintaining a low mass.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                
+
+                <div class="space-y-8">
+                    <div class="p-8 bg-white border border-blue-200 rounded-2xl shadow-xl">
+                        <h3 class="font-bold mb-6 uppercase text-xs text-blue-600 tracking-widest flex items-center gap-2">
+                            <i data-lucide="award" class="w-4 h-4"></i> My Contribution
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-slate-700 font-bold">
+                                <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs">01</span>
+                                Solo Task, Full Contribution
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900 text-white p-8 rounded-2xl shadow-2xl border border-blue-400/20">
+                        <h3 class="mono text-cyan-400 text-xs font-bold mb-6 uppercase tracking-widest">Technical Specs</h3>
+                        <ul class="space-y-8">
+                            <li>
+                                <span class="block text-blue-400 text-[10px] uppercase tracking-widest mb-2 font-bold italic">Material</span>
+                                <span class="font-bold text-slate-100">3K Twill Carbon Fiber</span>
+                            </li>
+                            <li>
+                                <span class="block text-blue-400 text-[10px] uppercase tracking-widest mb-2 font-bold italic">Mounting</span>
+                                <span class="font-bold text-slate-100">Underbody-Mounted Aluminum Tabs</span>
+                            </li>
+                            <li>
+                                <span class="block text-blue-400 text-[10px] uppercase tracking-widest mb-2 font-bold italic">Validation</span>
+                                <span class="font-bold text-slate-100">SolidWorks Flow Simulation</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="aspect-video bg-slate-900/40 rounded-2xl overflow-hidden border border-white/10 shadow-inner">
+                        <img src="Screenshot Sim Results.png" alt="Manufacturing Process" class="w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-video bg-slate-900/40 rounded-2xl overflow-hidden border border-white/10 shadow-inner">
+                        <img src="Screenshot Side Wings Sim.png" alt="Manufacturing Process" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 bg-slate-950 text-white border-t border-blue-900/50">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-[10px] text-blue-400 uppercase tracking-[0.3em] font-bold">© 2026 Jason Dao | SAE Electric Racing</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -12,37 +12,42 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .mono { font-family: 'JetBrains Mono', monospace; }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #eff6ff 0%, #ffffff 100%);
+        }
         .engineering-grid {
-            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
-            background-size: 40px 40px;
+            background-image: radial-gradient(#3b82f6 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.1;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-blue-50/30 text-slate-900">
 
-    <nav class="fixed top-0 w-full bg-slate-50/90 backdrop-blur-md border-b border-slate-200 z-50">
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-blue-100 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-2 text-sm font-bold uppercase tracking-widest hover:text-blue-600 transition-colors">
+            <a href="index.html" class="flex items-center space-x-2 text-sm font-bold uppercase tracking-widest text-blue-600 hover:text-blue-800 transition-colors">
                 <i data-lucide="arrow-left" class="w-4 h-4"></i>
                 <span>Back to Portfolio</span>
             </a>
-            <span class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hidden md:block">Project Case Study: 001</span>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-blue-400 hidden md:block">Project Case Study: 001</span>
         </div>
     </nav>
 
-    <header class="pt-32 pb-16 bg-white border-b border-slate-200">
-        <div class="container mx-auto px-6">
+    <header class="pt-32 pb-16 hero-gradient border-b border-blue-100 relative overflow-hidden">
+        <div class="absolute inset-0 engineering-grid"></div>
+        <div class="container mx-auto px-6 relative z-10">
             <div class="max-w-4xl">
                 <h2 class="mono text-blue-600 text-sm font-bold mb-4 uppercase tracking-[0.4em]">Structural Design & Analysis</h2>
-                <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-8">Electric Racing Monocoque Chassis</h1>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-8 text-slate-900">Electric Racing Monocoque Chassis [Project in Progress]</h1>
                 <p class="text-xl text-slate-600 leading-relaxed mb-8">
                     An exploration into lightweight composite structures, optimizing for torsional stiffness and driver safety in a high-performance electric racing environment.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <span class="px-3 py-1 bg-slate-100 border border-slate-200 text-xs font-bold mono">SOLIDWORKS</span>
-                    <span class="px-3 py-1 bg-slate-100 border border-slate-200 text-xs font-bold mono">ANSYS FEA</span>
-                    <span class="px-3 py-1 bg-slate-100 border border-slate-200 text-xs font-bold mono">COMPOSITES</span>
-                    <span class="px-3 py-1 bg-slate-100 border border-slate-200 text-xs font-bold mono">DFM</span>
+                    <span class="px-3 py-1 bg-blue-600 text-white text-xs font-bold mono shadow-lg shadow-blue-200">SOLIDWORKS</span>
+                    <span class="px-3 py-1 bg-cyan-500 text-white text-xs font-bold mono shadow-lg shadow-cyan-200">ANSYS FEA</span>
+                    <span class="px-3 py-1 bg-indigo-500 text-white text-xs font-bold mono shadow-lg shadow-indigo-200">COMPOSITES</span>
+                    <span class="px-3 py-1 bg-blue-800 text-white text-xs font-bold mono shadow-lg shadow-blue-900/20">DFM</span>
                 </div>
             </div>
         </div>
@@ -54,65 +59,167 @@
                 
                 <div class="lg:col-span-2 space-y-16">
                     <section>
-                        <div class="aspect-video bg-slate-200 rounded-sm overflow-hidden border border-slate-200 shadow-xl">
-                            <img src="https://cdn.discordapp.com/attachments/705966395346911312/1455733393324118250/Screenshot_2025-12-30_172343.png?ex=6955ccdf&is=69547b5f&hm=8a5ce5bbd68c251a0792eaf2730f46ef11160371b9d57b0dfc34607e5a66e36e" 
-                                 alt="Monocoque Chassis CAD Render" 
-                                 class="w-full h-full object-cover">
+                        <div class="aspect-video bg-white rounded-xl overflow-hidden border-4 border-white shadow-2xl">
+                            <img src="Screenshot Monocoque.png" alt="Monocoque Chassis CAD Render" class="w-full h-full object-cover">
                         </div>
-                        <p class="mt-4 text-xs mono text-slate-400 text-center uppercase tracking-widest">Fig 1.0: Isometric CAD view of final monocoque assembly</p>
+                        <p class="mt-4 text-xs mono text-blue-500 font-bold text-center uppercase tracking-widest">CAD view of final monocoque prototype</p>
                     </section>
 
-                    <section class="prose prose-slate max-w-none">
-                        <h3 class="text-2xl font-bold mb-6">Engineering Challenge</h3>
+  <section class="p-8 bg-gradient-to-br from-indigo-600 to-blue-900 text-white rounded-2xl shadow-xl border-b-4 border-cyan-400">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+        
+        <div class="space-y-6">
+            <h3 class="text-3xl font-bold mb-4 flex items-center gap-2">
+                <i data-lucide="shield-check" class="text-cyan-300"></i>
+                Subtask Leadership
+            </h3>
+            <p class="text-blue-50 leading-relaxed">
+                As the monocoque team lead, I was responsible for preliminary research to propose the project and forming the subteam. I coordinated weekly meetings, delegated tasks, and ensured that all design and manufacturing processes aligned with team goals. Most valuably, I reached out to industry professionals and students from other universities to provide crucial knowledge to our team.
+            </p>
+            
+            <div class="grid md:grid-cols-1 gap-4">
+                <div class="bg-white/10 p-5 rounded-xl backdrop-blur-md border border-white/20">
+                    <h4 class="text-cyan-300 font-bold text-xs uppercase tracking-widest mb-2">Technical Oversight</h4>
+                    <p class="text-sm">Directed the integration of the laminate schedule with physical mold constraints to ensure manufacturability.</p>
+                </div>
+                <div class="bg-white/10 p-5 rounded-xl backdrop-blur-md border border-white/20">
+                    <h4 class="text-cyan-300 font-bold text-xs uppercase tracking-widest mb-2">Research</h4>
+                    <p class="text-sm">Read multiple research papers and technical documents to understand the best practices for monocoque construction. Reached out to other students and industry professionals to gain insights.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="space-y-4">
+            <div class="aspect-video bg-slate-900/40 rounded-xl overflow-hidden border border-white/20">
+                <img src="Screenshot CriticalPath.png" alt="Team meeting or planning" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="aspect-video bg-slate-900/40 rounded-xl overflow-hidden border border-white/20">
+                <img src="Screenshot ManufacturingPlan.png" alt="Manufacturing or collaboration" class="w-full h-full object-cover">
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section class="py-12 border-t border-blue-100">
+    <div class="flex flex-col md:flex-row gap-12 items-center">
+        <div class="md:w-1/2 space-y-6">
+            <h3 class="text-3xl font-bold tracking-tight text-slate-900">
+                Preliminary Design
+            </h3>
+            <p class="text-slate-600 leading-relaxed">
+                An early design during the summer of 2025, this design was mostly a way to test our surface modeling capabilities and get a general idea of the monocoque geometry.
+            </p>
+        </div>
+
+        <div class="md:w-1/2">
+            <div class="relative group">
+                <div class="aspect-square bg-slate-100 rounded-2xl overflow-hidden border-4 border-white shadow-xl">
+                    <img src="Screenshot PrototypeMonocoque.png" 
+                         alt="Preliminary Monocoque CAD Design" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-4 -right-4 bg-slate-900 text-white p-4 rounded-xl shadow-2xl border border-blue-400/30">
+                    <p class="mono text-[10px] uppercase tracking-widest text-blue-400 mb-1">Status</p>
+                    <p class="text-xs font-bold uppercase tracking-tighter italic">V1.0 Concept Layout</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <section class="bg-white p-8 rounded-2xl border border-blue-100 shadow-sm">
+                        <h3 class="text-2xl font-bold mb-6 text-slate-800">Engineering Challenge</h3>
                         <p class="text-slate-600 leading-relaxed mb-6">
-                            The primary objective was to transition from a traditional steel space-frame to a carbon-fiber reinforced polymer (CFRP) monocoque. The design needed to satisfy strict competition safety regulations while achieving a significant reduction in vehicle mass.
+                            The primary objective was to transition from a traditional steel space-frame to a carbon-fiber reinforced polymer (CFRP) monocoque. However, a lack of experience with large molds combined with low funding meant my team had to perform intense research, prototyping, and testing to ensure that our design met FSAE safety standards as well as the standards of our team.
                         </p>
                         
-                        <div class="grid md:grid-cols-2 gap-8 my-10">
-                            <div class="bg-white p-6 border-l-4 border-blue-600 shadow-sm">
-                                <h4 class="font-bold mb-2 uppercase text-xs tracking-widest">Key Metric: Stiffness</h4>
-                                <p class="text-sm text-slate-600">Targeted a torsional stiffness of 2,500 Nm/deg to ensure predictable suspension kinematics.</p>
+                        <div class="grid md:grid-cols-2 gap-8 mb-10">
+                            <div class="bg-cyan-50 p-6 rounded-xl border-l-8 border-cyan-400 shadow-sm">
+                                <h4 class="font-bold mb-2 uppercase text-xs text-cyan-700 tracking-widest">Key Metric: Stiffness</h4>
+                                <p class="text-sm text-slate-600 leading-relaxed">Targeted a torsional stiffness of 2,500 Nm/deg to ensure predictable suspension kinematics.</p>
                             </div>
-                            <div class="bg-white p-6 border-l-4 border-blue-600 shadow-sm">
-                                <h4 class="font-bold mb-2 uppercase text-xs tracking-widest">Key Metric: Mass</h4>
-                                <p class="text-sm text-slate-600">Reduced primary structure weight by 22% compared to previous season's tubular chassis.</p>
+                            <div class="bg-indigo-50 p-6 rounded-xl border-l-8 border-indigo-400 shadow-sm">
+                                <h4 class="font-bold mb-2 uppercase text-xs text-indigo-700 tracking-widest">Key Metric: Mass</h4>
+                                <p class="text-sm text-slate-600 leading-relaxed">Predicted to reduce primary structure weight by ~22% compared to previous season's steel tube chassis.</p>
                             </div>
                         </div>
 
-                        <h3 class="text-2xl font-bold mb-6">Finite Element Analysis (FEA)</h3>
-                        <p class="text-slate-600 leading-relaxed mb-6">
+                        <h3 class="text-2xl font-bold mb-4 text-slate-800">Finite Element Analysis (FEA)</h3>
+                        <p class="text-slate-600 leading-relaxed">
                             Using ANSYS, I conducted extensive simulations to validate the laminate schedule. This involved testing for front impact (20g), side-impact protection, and harness attachment point pull-out strength.
                         </p>
+                    </section>
+
+                    <section class="py-12 px-8 bg-white border border-blue-100 rounded-2xl shadow-sm">
+                        <div class="grid md:grid-cols-5 gap-8 items-center">
+                            <div class="md:col-span-3">
+                                <div class="aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden border border-slate-100 shadow-inner">
+                                    <img src="Cerritos.png" alt="Team Photo" class="w-full h-full object-cover">
+                                </div>
+                                <p class="mt-3 text-[10px] mono text-blue-400 font-bold uppercase tracking-widest text-center">Me [3rd from the right] with most of the monocoque subteam</p>
+                            </div>
+                            <div class="md:col-span-2 space-y-4">
+                                <h3 class="text-xl font-bold flex items-center gap-2 text-slate-800">
+                                    <i data-lucide="users" class="text-blue-600"></i>
+                                    Team Collaboration
+                                </h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    I maintain the belief that a team that can talk comfortably can also work together effectively. Being the subteam lead, I always try to maintain a friendly environment, making time for chatting in combination with our work sessions and weekly meetings.
+                                </p>
+                                <div class="bg-blue-50 p-4 border border-blue-200 rounded-xl">
+                                    <p class="text-[10px] mono text-blue-600 uppercase font-bold mb-1 tracking-wider">Methodology</p>
+                                    <p class="text-xs text-slate-700 font-medium italic">Weekly virtual meetings, in-person manufacturing sessions, and occasional CAD sessions.</p>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </div>
 
                 <div class="space-y-8">
-                    <div class="bg-slate-900 text-white p-8 rounded-sm">
-                        <h3 class="mono text-blue-400 text-xs font-bold mb-6 uppercase tracking-widest">Project Specifications</h3>
-                        <ul class="space-y-6">
-                            <li>
-                                <span class="block text-slate-400 text-[10px] uppercase tracking-widest mb-1">Material Selection</span>
-                                <span class="font-bold">T700 Carbon Fiber / Nomex Honeycomb Core</span>
+                    <div class="p-8 bg-white border border-blue-200 rounded-2xl shadow-xl">
+                        <h3 class="font-bold mb-6 uppercase text-xs text-blue-600 tracking-widest flex items-center gap-2">
+                            <i data-lucide="award" class="w-4 h-4"></i> My Contribution
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-slate-700 font-bold">
+                                <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs">01</span>
+                                Monocoque Team Lead
                             </li>
-                            <li>
-                                <span class="block text-slate-400 text-[10px] uppercase tracking-widest mb-1">Software Stack</span>
-                                <span class="font-bold">SolidWorks, ANSYS, ACP (Composite PrepPost)</span>
-                            </li>
-                            <li>
-                                <span class="block text-slate-400 text-[10px] uppercase tracking-widest mb-1">Safety Standards</span>
-                                <span class="font-bold">FSAE / SES Structural Requirements</span>
-                            </li>
-                            <li>
-                                <span class="block text-slate-400 text-[10px] uppercase tracking-widest mb-1">Timeline</span>
-                                <span class="font-bold">8 Months (Concept to Validation)</span>
+                            <li class="flex items-center gap-3 text-slate-700 font-bold">
+                                <span class="w-8 h-8 rounded-full bg-cyan-100 text-cyan-600 flex items-center justify-center text-xs">02</span>
+                                CAD Designer
                             </li>
                         </ul>
                     </div>
 
-                    <div class="p-8 border border-slate-200 bg-white">
-                        <h3 class="font-bold mb-4 uppercase text-xs tracking-widest">Role: Lead Designer</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">
-                            Responsible for surface modeling, laminate schedule definition, and coordinating with the manufacturing team for the vacuum bagging process.
+                    <div class="bg-slate-900 text-white p-8 rounded-2xl shadow-2xl border border-blue-400/20">
+                        <h3 class="mono text-cyan-400 text-xs font-bold mb-6 uppercase tracking-widest">Project Specifications</h3>
+                        <ul class="space-y-8">
+                            <li>
+                                <span class="block text-blue-400 text-[10px] uppercase tracking-widest mb-2 font-bold italic">Material Selection</span>
+                                <span class="font-bold text-slate-100">Pre-preg Carbon Fiber / Nomex Honeycomb Core</span>
+                            </li>
+                            <li>
+                                <span class="block text-blue-400 text-[10px] uppercase tracking-widest mb-2 font-bold italic">Software Stack</span>
+                                <span class="font-bold text-slate-100">SolidWorks, ANSYS</span>
+                            </li>
+                            <li>
+                                <span class="block text-blue-400 text-[10px] uppercase tracking-widest mb-2 font-bold italic">Safety Standards</span>
+                                <span class="font-bold text-slate-100">FSAE / SES Structural Requirements</span>
+                            </li>
+                            <li>
+                                <span class="block text-blue-400 text-[10px] uppercase tracking-widest mb-2 font-bold italic">Timeline</span>
+                                <span class="font-bold text-slate-100">8 Months (Concept to Validation)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="p-8 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl shadow-xl">
+                        <h3 class="font-bold mb-4 uppercase text-xs text-blue-200 tracking-widest italic">Role: Lead [and a little bit of everything]</h3>
+                        <p class="text-sm text-blue-50 leading-relaxed">
+                            Created the basis for SolidWorks model, laminate schedule, and fully developed the manufacturing plan. Developed full timeline for project using critical path method. Coordinated between subteam members to ensure deadlines were met and oversaw work to ensure a quality final product. 
                         </p>
                     </div>
                 </div>
@@ -121,9 +228,9 @@
         </div>
     </main>
 
-    <footer class="py-12 bg-slate-900 text-white border-t border-slate-800">
+    <footer class="py-12 bg-slate-950 text-white border-t border-blue-900/50">
         <div class="container mx-auto px-6 text-center">
-            <p class="text-[10px] text-slate-500 uppercase tracking-[0.3em]">© 2025 Jason Dao | Case Study 001</p>
+            <p class="text-[10px] text-blue-400 uppercase tracking-[0.3em] font-bold">© 2026 Jason Dao | Case Study 001</p>
         </div>
     </footer>
 

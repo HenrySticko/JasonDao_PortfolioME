@@ -12,38 +12,44 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .mono { font-family: 'JetBrains Mono', monospace; }
-        .engineering-grid {
-            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
-            background-size: 40px 40px;
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #eff6ff 0%, #ffffff 100%);
         }
-        .hover-lift { transition: transform 0.25s ease, box-shadow 0.25s ease; }
-        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        .engineering-grid {
+            background-image: radial-gradient(#3b82f6 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.1;
+        }
+        .hover-lift { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.2); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-blue-50/30 text-slate-900">
 
-    <nav class="fixed top-0 w-full bg-slate-50/90 backdrop-blur-md border-b border-slate-200 z-50">
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-blue-100 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tight">Jason Dao <span class="text-blue-600 font-light">| Engineering</span></span>
+            <span class="text-xl font-bold tracking-tight text-slate-900">Jason Dao <span class="text-blue-600 font-light">| Engineering</span></span>
             <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
-                <a href="#projects" class="hover:text-blue-600">Projects</a>
-                <a href="#competencies" class="hover:text-blue-600">Competencies</a>
-                <a href="#about" class="hover:text-blue-600">About</a>
-                <a href="#contact" class="bg-slate-900 text-white px-4 py-2 hover:bg-blue-600 transition-colors">Contact</a>
+                <a href="#projects" class="hover:text-blue-600 transition-colors">Projects</a>
+                <a href="#competencies" class="hover:text-blue-600 transition-colors">Competencies</a>
+                <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-800 transition-all shadow-lg shadow-blue-200">Contact</a>
             </div>
         </div>
     </nav>
 
-    <section class="engineering-grid min-h-[70vh] flex items-center pt-20 border-b border-slate-200">
-        <div class="container mx-auto px-6">
+    <section class="relative hero-gradient min-h-[85vh] flex items-center pt-20 border-b border-blue-100 overflow-hidden">
+        <div class="absolute inset-0 engineering-grid"></div>
+        <div class="container mx-auto px-6 relative z-10">
             <div class="max-w-4xl">
-                <h1 class="text-7xl md:text-9xl font-bold tracking-tighter mb-8">Jason Dao</h1>
+                <h2 class="mono text-blue-600 text-sm font-bold mb-4 uppercase tracking-[0.4em]">UCI Mechanical Engineering</h2>
+                <h1 class="text-7xl md:text-9xl font-bold tracking-tighter mb-8 text-slate-900">Jason Dao</h1>
                 <p class="text-2xl text-slate-600 leading-relaxed max-w-2xl mb-12">
-                    Mechanical Engineering student focused on <span class="text-slate-900 font-semibold">mechanical systems</span>, aerodynamic design, and high-performance structures.
+                    Focused on <span class="text-blue-600 font-semibold underline decoration-blue-200 underline-offset-8">mechanical systems</span>, aerodynamic design, and high-performance composite structures.
                 </p>
                 <div class="flex items-center space-x-6">
-                    <div class="h-px w-12 bg-slate-400"></div>
-                    <p class="mono text-xs text-slate-500 uppercase tracking-widest">Selected Engineering Portfolio 2025</p>
+                    <div class="h-px w-12 bg-blue-400"></div>
+                    <p class="mono text-xs text-blue-500 font-bold uppercase tracking-widest">Selected Engineering Portfolio 2026</p>
                 </div>
             </div>
         </div>
@@ -52,79 +58,75 @@
     <section id="projects" class="py-24 bg-white">
         <div class="container mx-auto px-6">
             <div class="mb-16">
-                <h2 class="text-4xl font-bold tracking-tight mb-4 text-blue-600">Selected Works</h2>
-                <div class="h-1 w-20 bg-blue-600 mb-6"></div>
-                <p class="text-slate-500 max-w-xl">In-depth documentation of design, analysis, and fabrication processes.</p>
+                <h2 class="text-4xl font-bold tracking-tight mb-4 text-slate-900">Selected Works</h2>
+                <div class="h-1.5 w-20 bg-blue-600 mb-6"></div>
+                <p class="text-slate-500 max-w-xl italic">In-depth documentation of design, analysis, and fabrication processes.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12">
                 <a href="project-monocoque.html" class="group block hover-lift">
-                    <div class="relative aspect-video mb-6 overflow-hidden bg-slate-100 rounded-sm border border-slate-200">
+                    <div class="relative aspect-video mb-6 overflow-hidden bg-slate-100 rounded-2xl border-4 border-white shadow-xl">
                         <img src="Screenshot Monocoque.png" alt="Monocoque Design" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">In Progress</div>
                     </div>
-                    <div class="flex justify-between items-start">
+                    <div class="flex justify-between items-start px-2">
                         <div>
                             <h3 class="text-2xl font-bold group-hover:text-blue-600 transition-colors">Electric Racing Monocoque Chassis</h3>
-                            <p class="text-slate-600 mt-2">Lightweight composite structure designed for high-speed racing.</p>
+                            <p class="text-slate-600 mt-2">UCI's first lightweight composite structure designed for FSAE competition.</p>
                         </div>
-                        <i data-lucide="arrow-right" class="text-slate-300 group-hover:text-blue-600"></i>
+                        <div class="bg-blue-50 p-2 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-all">
+                            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                        </div>
                     </div>
                 </a>
 
                 <a href="project-robot.html" class="group block hover-lift">
-                    <div class="relative aspect-video mb-6 overflow-hidden bg-slate-100 rounded-sm border border-slate-200">
+                    <div class="relative aspect-video mb-6 overflow-hidden bg-slate-100 rounded-2xl border-4 border-white shadow-xl">
                         <img src="Screenshot Rover.png" alt="Rover Rendering" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
                     </div>
-                    <div class="flex justify-between items-start">
+                    <div class="flex justify-between items-start px-2">
                         <div>
                             <h3 class="text-2xl font-bold group-hover:text-blue-600 transition-colors">RC Rover</h3>
-                            <p class="text-slate-600 mt-2">A robotic platform designed for speed and stability on a challenging racetrack.</p>
+                            <p class="text-slate-600 mt-2">Performance-driven robotic platform optimized for technical racetrack trials.</p>
                         </div>
-                        <i data-lucide="arrow-right" class="text-slate-300 group-hover:text-blue-600"></i>
+                        <div class="bg-blue-50 p-2 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-all">
+                            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                        </div>
                     </div>
                 </a>
 
                 <a href="project-sidewings.html" class="group block hover-lift">
-                    <div class="relative aspect-video mb-6 overflow-hidden bg-slate-100 rounded-sm border border-slate-200">
+                    <div class="relative aspect-video mb-6 overflow-hidden bg-slate-100 rounded-2xl border-4 border-white shadow-xl">
                         <img src="Screenshot Side Wings Sim.png" alt="Side Wings CFD" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
                     </div>
-                    <div class="flex justify-between items-start">
+                    <div class="flex justify-between items-start px-2">
                         <div>
                             <h3 class="text-2xl font-bold group-hover:text-blue-600 transition-colors">Electric Racing Side Wings</h3>
-                            <p class="text-slate-600 mt-2">Carbon fiber wings to add to overall vehicle downforce and cornering power.</p>
+                            <p class="text-slate-600 mt-2">Carbon fiber aerodynamic elements optimized for maximum downforce.</p>
                         </div>
-                        <i data-lucide="arrow-right" class="text-slate-300 group-hover:text-blue-600"></i>
+                        <div class="bg-blue-50 p-2 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-all">
+                            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                        </div>
                     </div>
                 </a>
-
             </div>
         </div>
     </section>
 
-    <section id="competencies" class="py-24 bg-slate-100 border-y border-slate-200">
+    <section id="competencies" class="py-24 bg-blue-50/50 border-y border-blue-100">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold tracking-tight mb-16">Technical Competencies</h2>
+            <h2 class="text-4xl font-bold tracking-tight mb-16 text-slate-900">Technical Competencies</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <a href="skills-cad.html" class="flex flex-col md:flex-row bg-white overflow-hidden hover-lift border border-slate-200 group">
-                    <div class="md:w-1/3 h-52 md:h-auto overflow-hidden">
+                <a href="skills-cad.html" class="flex flex-col md:flex-row bg-white rounded-2xl overflow-hidden hover-lift border border-blue-100 group shadow-lg shadow-blue-900/5">
+                    <div class="md:w-1/3 h-52 md:h-auto overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="CAD">
+                        <div class="absolute inset-0 bg-blue-600/10"></div>
                     </div>
                     <div class="p-8 md:w-2/3">
-                        <h3 class="text-xl font-bold mb-3 uppercase tracking-tighter">CAD & Design for Manufacturing</h3>
-                        <p class="text-slate-600 text-sm mb-4">Mastery in SolidWorks and Fusion 360, focusing on complex assemblies and CNC toolpathing.</p>
-                        <span class="text-blue-600 font-bold text-xs tracking-widest">Full Skillset →</span>
-                    </div>
-                </a>
-
-                <a href="skills-fea.html" class="flex flex-col md:flex-row bg-white overflow-hidden hover-lift border border-slate-200 group">
-                    <div class="md:w-1/3 h-52 md:h-auto overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Simulation">
-                    </div>
-                    <div class="p-8 md:w-2/3">
-                        <h3 class="text-xl font-bold mb-3 uppercase tracking-tighter">FEA & Structural Simulation</h3>
-                        <p class="text-slate-600 text-sm mb-4">Validating performance under load using ANSYS Finite Element Analysis and CFD tools.</p>
-                        <span class="text-blue-600 font-bold text-xs tracking-widest">Simulation Case Studies →</span>
+                        <h3 class="text-xl font-bold mb-3 uppercase tracking-tighter text-slate-800">CAD & Design for Manufacturing</h3>
+                        <p class="text-slate-600 text-sm mb-6">Expertise in SolidWorks and Fusion 360, focusing on complex assemblies and CNC toolpathing.</p>
+                        <span class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-md shadow-blue-200">Full Skillset →</span>
                     </div>
                 </a>
             </div>
@@ -134,32 +136,34 @@
     <section id="about" class="py-24 bg-white">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-start">
-                <div>
-                    <h2 class="text-3xl font-bold mb-8">Engineering Profile</h2>
-                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                        I specialize in the design and optimization of mechanical hardware for aerospace applications. My approach balances computational simulation with hands-on fabrication to ensure reliability in extreme environments.
+                <div class="space-y-8">
+                    <h2 class="text-4xl font-bold tracking-tight text-slate-900">Engineering Profile</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        I specialize in the design and optimization of mechanical hardware for aero and automotive applications. My approach balances computational simulation with hands-on fabrication to ensure reliability in extreme environments.
                     </p>
                     <div class="space-y-4">
-                        <div class="flex items-center space-x-4">
-                            <span class="bg-blue-600 text-white p-2 rounded-full"><i data-lucide="check" class="w-4 h-4"></i></span>
-                            <p class="font-semibold text-slate-700">Propulsion Systems Lead @ University Rocketry</p>
+                        <div class="flex items-center space-x-4 bg-blue-50 p-4 rounded-xl border border-blue-100">
+                            <span class="bg-blue-600 text-white p-2 rounded-full shadow-lg shadow-blue-200"><i data-lucide="check" class="w-4 h-4"></i></span>
+                            <p class="font-bold text-slate-800">Monocoque Team Lead @ Anteater Electric Racing</p>
                         </div>
-                        <div class="flex items-center space-x-4">
-                            <span class="bg-blue-600 text-white p-2 rounded-full"><i data-lucide="check" class="w-4 h-4"></i></span>
-                            <p class="font-semibold text-slate-700">Experienced in CNC Machining & Rapid Prototyping</p>
+                        <div class="flex items-center space-x-4 bg-cyan-50 p-4 rounded-xl border border-cyan-100">
+                            <span class="bg-cyan-500 text-white p-2 rounded-full shadow-lg shadow-cyan-200"><i data-lucide="check" class="w-4 h-4"></i></span>
+                            <p class="font-bold text-slate-800">Experienced in Composites & Structural FEA</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-slate-50 p-8 border border-slate-200">
-                    <h3 class="font-bold mb-4 uppercase text-xs text-blue-600 tracking-widest">Leadership & Extracurriculars</h3>
-                    <ul class="space-y-6">
-                        <li>
-                            <p class="font-bold">University Rocketry Team</p>
-                            <p class="text-sm text-slate-500">Leading the propulsion division to design hybrid motors for national competitions.</p>
+
+                <div class="bg-slate-900 text-white p-10 rounded-3xl shadow-2xl border border-blue-400/20 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-600/20 rounded-full -mr-16 -mt-16 blur-2xl"></div>
+                    <h3 class="mono text-cyan-400 text-xs font-bold mb-8 uppercase tracking-widest">Leadership & Extracurriculars</h3>
+                    <ul class="space-y-8">
+                        <li class="relative group">
+                            <p class="font-bold text-lg text-white group-hover:text-blue-400 transition-colors">Anteater Electric Racing</p>
+                            <p class="text-sm text-slate-400 mt-2 leading-relaxed font-light">Leading the monocoque subteam to design UCI's first composite chassis for national competitions.</p>
                         </li>
-                        <li>
-                            <p class="font-bold">Engineers Without Borders</p>
-                            <p class="text-sm text-slate-500">Collaborating on sustainable design solutions for international infrastructure projects.</p>
+                        <li class="relative group border-t border-white/10 pt-8">
+                            <p class="font-bold text-lg text-white group-hover:text-blue-400 transition-colors">Design, Build, Fly</p>
+                            <p class="text-sm text-slate-400 mt-2 leading-relaxed font-light">Collaborating on a high-performance trainer RC plane for consumer-level production.</p>
                         </li>
                     </ul>
                 </div>
@@ -167,24 +171,24 @@
         </div>
     </section>
 
-    <footer id="contact" class="py-24 bg-slate-900 text-white">
+    <footer id="contact" class="py-24 bg-slate-950 text-white border-t border-blue-900/50">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
                 <div class="mb-12 md:mb-0">
-                    <h2 class="text-4xl font-bold mb-4 tracking-tighter">Contact & Inquiries</h2>
-                    <p class="text-slate-400">Discussing new opportunities in aerospace and mechanical design.</p>
+                    <h2 class="text-5xl font-bold mb-4 tracking-tighter">Contact & Inquiries</h2>
+                    <p class="text-blue-400 mono text-xs uppercase tracking-[0.3em]">Engineering Opportunity | 2026</p>
                 </div>
-                <div>
-                    <a href="mailto:jasonqd.dao@gmail.com" class="text-3xl font-light hover:text-blue-400 transition-colors">jasonqd.dao@gmail.com</a>
-                    <div class="flex justify-center md:justify-end space-x-6 mt-8">
-                        <a href="https://www.linkedin.com/in/jason-q-dao" target="_blank" class="hover:text-blue-400 transition-colors"><i data-lucide="linkedin"></i></a>
-                        <a href="Jason Dao - RESUME (updated 10_15_25).pdf" class="hover:text-blue-400 transition-colors"><i data-lucide="file-text"></i></a>
+                <div class="space-y-8">
+                    <a href="mailto:jasonqd.dao@gmail.com" class="text-3xl md:text-4xl font-light hover:text-blue-400 transition-all block underline decoration-blue-800 underline-offset-8">jasonqd.dao@gmail.com</a>
+                    <div class="flex justify-center md:justify-end space-x-8">
+                        <a href="https://www.linkedin.com/in/jason-q-dao" target="_blank" class="hover:text-blue-400 transition-transform hover:scale-110"><i data-lucide="linkedin" class="w-8 h-8"></i></a>
+                        <a href="Jason Dao - RESUME (updated 10_15_25).pdf" target="_blank"class="hover:text-blue-400 transition-transform hover:scale-110"><i data-lucide="file-text" class="w-8 h-8"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="mt-20 pt-8 border-t border-slate-800 text-[10px] text-slate-500 uppercase tracking-widest flex justify-between">
-                <p>© 2025 Jason Dao</p>
-                <p>Calculated Design | Mechanical Engineering</p>
+            <div class="mt-20 pt-8 border-t border-slate-900 text-[10px] text-slate-500 uppercase tracking-widest flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>© 2026 Jason Dao | UCI Mechanical Engineering</p>
+                <p class="font-bold text-blue-900">Calculated Design | Built for Speed</p>
             </div>
         </div>
     </footer>
